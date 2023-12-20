@@ -30,6 +30,5 @@ scatter = ax.scatter(data["Fresh"], data["Milk"], c=data["cluster"], cmap="virid
 legend1 = ax.legend(*scatter.legend_elements(), title="Clusters")
 ax.add_artist(legend1)
 
-
 st.write("## Clustering Visualization")
 st.pyplot(fig)
