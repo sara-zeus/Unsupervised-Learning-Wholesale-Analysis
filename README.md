@@ -31,10 +31,9 @@ Principal Component Analysis (PCA)
 def plot_explained_variance_ratio(pca_model):
     # Code for plotting explained variance ratio
     plt.scatter(...)
-    plt.show()
+    plt.show() ,,, 
 
-
-Conclusion
+## Conclusion
 
 Cluster Analysis: Identified 3 main customer groups using KMeans and Hierarchical clustering.
 PCA Findings: PCA revealed 86% variance in just two principal components.
