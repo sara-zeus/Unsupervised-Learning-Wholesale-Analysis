@@ -1,40 +1,46 @@
 # Wholesale Customer Data Analysis
 
-## Introduction
+Utilize unsupervised learning techniques to construct multiple learning models using a wholesale dataset, discerning customer groupings based on expenditure across various product categories (e.g., Grocery, Milk, Detergent_Products, Fresh food, Frozen food, Deli). This aims to enhance skills in:
 
-This project involves analyzing wholesale customer data using various techniques like KMeans clustering, PCA, and more. The dataset comprises customer annual spending across different product categories.
+Exploratory data analysis and pre-processing
+KMeans and hierarchical clustering
+Principal Component Analysis (PCA)
+Project Phases:
 
-## Data Preprocessing
+Exploratory Data Analysis: Utilize Pandas and Python methods for data analysis.
+Data Preprocessing: Engineer features and address missing values and outliers.
+Model Training: Employ KMeans, Hierarchical Clustering, and PCA.
+Model Evaluation: Compare model performance with scaled and non-scaled data.
+Project Scope:
 
-- **Scaling:** Considered scaling data for distance-based models.
-- **Elbow Rule:** Utilized the Elbow Rule for optimal cluster selection in KMeans.
-- **PCA:** Analyzed Principal Component Analysis for dimensionality reduction.
+This project applies unsupervised learning to real-world wholesale data, visualizing insights derived from the analysis. Tasks include:
 
-## Outlier Analysis Summary
+Exploratory Data Analysis: Clean data, analyze relationships, and perform feature engineering.
+Unsupervised Learning: Apply k-means and hierarchical clustering, and PCA to identify patterns and group similar data points.
+Insight Communication: Communicate findings using visualizations and metrics for informed decision-making.
+Key Findings:
 
-### Findings:
-- Few outliers detected in each product category, with the maximum percentage in any category around 5%.
-- I'm contemplating whether or not to remove outliers because they offer valuable insights into understanding customer spending habits. 
-- Outliers contain valuable information for clustering algorithms, especially for Agglomerative Clustering. 
+KMeans and Hierarchical Clustering revealed three distinct customer segments based on expenditure across product categories.
+PCA analysis demonstrated that 86% variance can be explained by two principal components (PC1 and PC2), and 93% with three components (PC1, PC2, PC3). Opting for two components balances variance coverage and simplifies analyses.
+Scaled data didn't provide clearer insights in clustering. Unscaled data resulted in more interpretable Elbow Plots and cleaner model outcomes.
+Reflection and Next Steps:
 
-### Impact on Analysis Methods:
-- PCA requires variance representation, and outliers contribute to this variance. Hence, not removing them.
-- KMeans clustering may be influenced by outliers but with a limited number, resilience to outliers is expected (not many outliers).
-### Outlier Statistics:
+This project highlighted areas for further exploration:
 
-| Category          | # Outliers | % Outliers |
-|-------------------|------------|------------|
-| Fresh             | 8          | 1.82       |
-| Milk              | 20         | 4.55       |
-| Grocery           | 12         | 2.73       |
-| Frozen            | 23         | 5.23       |
-| Detergents_Paper  | 22         | 5          |
-| Delicassen        | 19         | 4.32       |
+Exploring scaling techniques to improve convergence without distorting model outcomes.
+Assessing the tradeoff between dimensionality reduction and capturing variance.
+Investigating alternative visualization methods for clustering without relying on specific code.
+Pending Questions:
+
+Does retaining three dimensions significantly impact downstream applications compared to the gained 7% variance?
+How can this tradeoff between dimensionality and variance retention be quantified?
+Learning Goals:
+
+Further understanding sought in exploring scaling methods, evaluating dimensionality, and discovering alternative visualization approaches for clustering.
 
 
-### Conclusion:
-- Outliers are essential for PCA analysis and less impactful on Agglomerative Clustering.
-- Not removing outliers, aiming for resilience in KMeans clustering due to their relatively low presence in the dataset.
+
+
 
 
 
