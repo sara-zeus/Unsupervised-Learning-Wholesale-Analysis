@@ -61,6 +61,6 @@ def plot_distortion(X, max_clusters=10):
     plt.show()
 ```
 
-![Dendrogram](/Users/yasara/Unsupervised-Learning-Wholesale-Analysis/Unsupervised-Learning-Wholesale-Analysis/image)
+![Dendrogram](/Users/yasara/Unsupervised-Learning-Wholesale-Analysis/Unsupervised-Learning-Wholesale-Analysis/image/Dendogram.png)
 
   
