@@ -14,7 +14,7 @@ This project involves analyzing wholesale customer data using various techniques
 
 #### Elbow Method for Optimal Clusters
 
-```python
+
 # Function for plotting distortion in Elbow Rule
 def plot_distortion(X, max_clusters=10):
     # Code for finding distortion values for different clusters
@@ -33,7 +33,6 @@ def plot_explained_variance_ratio(pca_model):
     plt.scatter(...)
     plt.show()
 
-```python
 
 
 ## Conclusion
