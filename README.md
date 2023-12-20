@@ -12,6 +12,7 @@ Utilize unsupervised learning techniques to construct multiple learning models u
 2. **Data Preprocessing:** Engineer features and address missing values and outliers.
 3. **Model Training:** Employ KMeans, Hierarchical Clustering, and PCA.
 4. **Model Evaluation:** Compare model performance with scaled and non-scaled data.
+5. **Created a Streamlit app.** 
 
 ## Project Scope
 
