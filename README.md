@@ -34,12 +34,13 @@ plt.show()
 ```
 
 ## Principal Component Analysis (PCA)
-
+```python
 # Function to plot explained variance ratio for PCA
 def plot_explained_variance_ratio(pca_model):
     # Code for plotting explained variance ratio
     plt.scatter(...)
     plt.show()
+
 
 
 
