@@ -10,14 +10,47 @@ This project involves analyzing wholesale customer data using various techniques
 - **Elbow Rule:** Utilized the Elbow Rule for optimal cluster selection in KMeans.
 - **PCA:** Analyzed Principal Component Analysis for dimensionality reduction.
 
-## Code Snippets
+## Outlier Analysis Summary
+
+### Findings:
+- Few outliers detected in each product category, with the maximum percentage in any category around 5%.
+- I'm contemplating whether or not to remove outliers because they offer valuable insights into understanding customer spending habits. 
+- Outliers contain valuable information for clustering algorithms, especially for Agglomerative Clustering. 
+
+### Impact on Analysis Methods:
+- PCA requires variance representation, and outliers contribute to this variance. Hence, not removing them.
+- KMeans clustering may be influenced by outliers but with a limited number, resilience to outliers is expected (not many outliers).
+### Outlier Statistics:
+
+| Category          | # Outliers | % Outliers |
+|-------------------|------------|------------|
+| Fresh             | 8          | 1.82       |
+| Milk              | 20         | 4.55       |
+| Grocery           | 12         | 2.73       |
+| Frozen            | 23         | 5.23       |
+| Detergents_Paper  | 22         | 5          |
+| Delicassen        | 19         | 4.32       |
+
+
+### Conclusion:
+- Outliers are essential for PCA analysis and less impactful on Agglomerative Clustering.
+- Not removing outliers, aiming for resilience in KMeans clustering due to their relatively low presence in the dataset.
+
+
+
+
+
+
+## Some Code Snippets
+
+
 
 #### Elbow Method for Optimal Clusters
 
 
 
 
-Certainly! In Markdown format for a README file on GitHub, you'd use triple backticks to create a code block with Python syntax highlighting. Here's the Python function converted into a code snippet in Markdown:
+
 
 ```python
 
