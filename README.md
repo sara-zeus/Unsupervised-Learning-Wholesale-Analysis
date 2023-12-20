@@ -61,7 +61,7 @@ def plot_distortion(X, max_clusters=10):
     plt.show()
 ```
 
-![Dendrogram](/image/Dendrogram.png)
+![Dendrogram](image/Dendogram.png)
  
 
   
