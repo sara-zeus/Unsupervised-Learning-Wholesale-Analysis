@@ -16,7 +16,7 @@ This project involves analyzing wholesale customer data using various techniques
 
 
 
-ChatGPT
+
 Certainly! In Markdown format for a README file on GitHub, you'd use triple backticks to create a code block with Python syntax highlighting. Here's the Python function converted into a code snippet in Markdown:
 
 ```python
@@ -41,7 +41,7 @@ def plot_explained_variance_ratio(pca_model):
     plt.scatter(...)
     plt.show()
 
-
+```
 
 
 ## Conclusion
