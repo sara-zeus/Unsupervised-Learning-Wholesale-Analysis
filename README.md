@@ -49,6 +49,7 @@ This project highlighted areas for further exploration:
 Further understanding sought in exploring scaling methods, evaluating dimensionality, and discovering alternative visualization approaches for clustering.
 
 ### Some Code Snippets 📜
+![Dendrogram](images/Dendogram.png)
 
 #### Elbow Method for Optimal Clusters
 
