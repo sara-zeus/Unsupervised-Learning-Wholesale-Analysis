@@ -48,8 +48,6 @@ This project highlighted areas for further exploration:
 
 Further understanding sought in exploring scaling methods, evaluating dimensionality, and discovering alternative visualization approaches for clustering.
 
-# Wholesale Customer Data Analysis 📊
-
 ...
 
 ## Streamlit Application for Interactive Analysis 🌐
