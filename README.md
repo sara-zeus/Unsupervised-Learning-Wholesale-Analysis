@@ -66,7 +66,7 @@ def plot_distortion(X, max_clusters=10):
     plt.title('Elbow Method for Optimal Clusters')
     plt.show()
 ```
-#### The Dendrogram:
+## The Dendrogram:
 ![Dendrogram](image/Dendogram.png)
 
 
