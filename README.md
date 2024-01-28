@@ -93,7 +93,7 @@ ax.add_artist(legend1)
 
 st.write("## Clustering Visualization")
 st.pyplot(fig)
-
+```
 
 ### Some Code Snippets 📜
 
