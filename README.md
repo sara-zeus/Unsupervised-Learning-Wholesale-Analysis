@@ -47,7 +47,7 @@ This project highlighted areas for further exploration:
 ## Learning Goals 🎓
 
 Further understanding sought in exploring scaling methods, evaluating dimensionality, and discovering alternative visualization approaches for clustering.
-![Dendrogram](image/Dendogram.png)
+
 
 ### Some Code Snippets 📜
 
@@ -65,5 +65,8 @@ def plot_distortion(X, max_clusters=10):
     plt.ylabel('Distortion')
     plt.title('Elbow Method for Optimal Clusters')
     plt.show()
+```
+#### The Dendrogram:
+![Dendrogram](image/Dendogram.png)
 
 
