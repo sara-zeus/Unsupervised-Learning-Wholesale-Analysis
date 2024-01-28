@@ -48,6 +48,54 @@ This project highlighted areas for further exploration:
 
 Further understanding sought in exploring scaling methods, evaluating dimensionality, and discovering alternative visualization approaches for clustering.
 
+# Wholesale Customer Data Analysis 📊
+
+...
+
+## Streamlit Application for Interactive Analysis 🌐
+
+As part of this project, I developed an interactive web application using Streamlit, enabling users to dynamically explore KMeans clustering of wholesale data. The app provides a user-friendly interface to set the number of clusters and visually analyze the resulting cluster distribution. Note: The application is currently developed but not yet deployed.
+
+### App Features
+- **Dynamic Clustering**: Users can select the number of clusters for KMeans analysis, allowing for flexible and interactive data exploration.
+- **Interactive Visualization**: The app includes a scatter plot visualization for an intuitive understanding of clustering based on user-selected parameters.
+- **Data Exploration**: The app facilitates an engaging way to interact with and explore the clustered data.
+
+### Streamlit App Code Snippet
+
+```python
+import streamlit as st
+import pandas as pd
+from sklearn.cluster import KMeans
+import matplotlib.pyplot as plt
+
+st.title("KMeans Clustering App")
+
+# Adjust the file path as needed for deployment
+file_path = "path_to_data/Wholesale_Data.csv"
+data = pd.read_csv(file_path)
+
+st.sidebar.header("Set Parameters")
+n_clusters = st.sidebar.number_input(
+    "Number of Clusters", min_value=2, max_value=10, value=3
+)
+
+kmeans = KMeans(n_clusters=n_clusters, random_state=42)
+data["cluster"] = kmeans.fit_predict(
+    data[["Fresh", "Milk", "Grocery", "Frozen", "Detergents_Paper", "Delicassen"]]
+)
+
+st.write("## Clustered Data")
+st.write(data)
+
+fig, ax = plt.subplots()
+scatter = ax.scatter(data["Fresh"], data["Milk"], c=data["cluster"], cmap="viridis")
+legend1 = ax.legend(*scatter.legend_elements(), title="Clusters")
+ax.add_artist(legend1)
+
+st.write("## Clustering Visualization")
+st.pyplot(fig)
+
 
 ### Some Code Snippets 📜
 
